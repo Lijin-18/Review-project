@@ -1,0 +1,53 @@
+form{
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    /* margin: 10px 0px; */
+}
+
+.dark-mode{
+    background-color: black;
+
+}
+.light-mode{
+    background-color: rgb(255, 255, 255);
+
+}
+.theme-btn{
+    border: none;
+    border-radius: 50px;
+    padding: 5%px;
+}
+.header{
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.card{
+    margin: 10px 0px;
+
+}
+.list-display li{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+li > button{
+    position: sticky;
+    top: 5px;
+    right: 1px;
+}
+.warning-text{
+    color: red;
+}
