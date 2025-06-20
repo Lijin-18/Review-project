@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Card from './card'
 import Button from './button'
 import MyContext from './MyContext'
@@ -6,12 +6,20 @@ import MyContext from './MyContext'
 
 function Form({}) {
 
-const {getValue , warn , value , showVal} = useContext(MyContext);
+const {getValue , warn , value , setValue, showVal ,updatedValue } = useContext(MyContext);
 
   const getInp =(e) =>{
     getValue(e.target.value)
   }
 
+
+useEffect(()=>{
+
+  if(updatedValue.edit === true){
+    setValue(updatedValue.item.name)
+  }
+
+},[updatedValue])
   
 
   return (
